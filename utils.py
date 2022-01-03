@@ -33,7 +33,7 @@ def get_model(model, input_channels=3, pretrained=False):
 
 def prepare_dataloader(data_directory, mode, augment_parameters,
                        do_augmentation, batch_size, size, num_workers):
-    data_dirs = os.listdir(data_directory)
+    data_dirs = ['left']
     data_transform = image_transforms(
         mode=mode,
         augment_parameters=augment_parameters,
